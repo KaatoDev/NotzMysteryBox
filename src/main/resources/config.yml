@@ -1,0 +1,44 @@
+prefix: "&6[&fRedeHyper&6]&f"
+gui-title: "&6[&fRedeHyper&6]&f"
+animate-glass: true
+glass-color: 10 # if animate is false
+
+enabled-mysteryboxes:
+  - 'divina'
+
+mysteryboxes:
+  divina:
+    ==: dev.kaato.notzmysterybox.entities.MysteryBox
+    display: '&6Caixa Misteriosa'
+    description:
+      - '&fTipo: &eDivina'
+    type: CHEST
+    isEnchanted: true
+    rewards:
+      peita1: 2.3
+
+enabled-rewards:
+  - 'peita1'
+
+rewards:
+  peita1:
+    ==: dev.kaato.notzmysterybox.entities.Reward
+    rewardType: ITEM
+    message: 'Peitoral ebaaaaaa'
+    item: &id001
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    icon: *id001
+
+
+default-icons:
+  COMMAND: []
+  ITEM: []
+  MONEY: []
+  MESSAGE: []

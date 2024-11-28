@@ -1,0 +1,18 @@
+name: NotzMysteryBox
+version: '1.0'
+main: dev.kaato.notzmysterybox.Main
+#api-version: '1.18'
+
+permissions:
+  notzmysterybox.admin:
+    default: false
+    description: Access to admin commands
+
+commands:
+  nmysterybox:
+    usage: /nmb
+    description: nmb
+    aliases:
+      - nmb
+      - nmbs
+      - nmysteryboxes
